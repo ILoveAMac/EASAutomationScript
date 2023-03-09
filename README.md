@@ -4,11 +4,11 @@
 
 Simply put the automate.py file into the Quartus Directory and run it with "python3 automate.py", after you have done configuration in Platform designer.
 
-The goal of this script is to automate the process of creating the "hps_0.h" file for the HPS and
-to compile the HPS code.
+The goal of this script is to automate the process of creating the "hps_0.h" file for the HPS and to compile the HPS code.
 This script is intended to run on a Linux machine or in WSL with Quartus installed.
 The script should be run in the same directory as the Quartus project.
 
+```
 The script will create the directory structure as shows below:
 Quartus_Project/
 ├─ automate.py
@@ -17,3 +17,4 @@ Quartus_Project/
 │  ├─ main.c
 │  ├─ Makefile
 Only the C Code directory will be created by the script.
+```
