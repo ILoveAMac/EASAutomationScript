@@ -207,8 +207,6 @@ else
     echo "Version 20.1 [Build 711]"
     echo "------------------------------------------------"
 
-
-	
     # env.sh
     ############################################################
     #                                                          #
@@ -584,7 +582,6 @@ def main(argv):
             print("The C Code directory now contains the following files:")
             os.system("cd C\ Code/ && ls")
             print("====================================================================================")
-            
             
             # Delete the temporary script
             os.remove(embedded_path + "tmp_embedded.sh")
