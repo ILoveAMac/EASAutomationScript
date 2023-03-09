@@ -93,7 +93,9 @@ CPPFLAGS                += $(INCS:%=-I%) -I$(HWLIBS_ROOT)/include -I$(HWLIBS_ROO
 LDFLAGS                 += $(INCS:%=-I%) -I$(HWLIBS_ROOT)/include -I$(HWLIBS_ROOT)/include/$(ALT_DEVICE_FAMILY) -D$(ALT_DEVICE_FAMILY)
  
 # This is the default target if the user does just calls 'make'
-all: build size
+all:
+	@make clean
+	@make build size
  
 # Build all the files
 build: builddirs $(BUILDDIR)/$(TARGET)
@@ -129,7 +131,7 @@ size: $(BUILDDIR)/$(TARGET)
 # Clean up
 clean:
 	@rm -rf $(BUILDDIR) $(OBJS) $(TARGET) $(TARGET).* *.a *.o *~
-	@echo Done
+	@echo Clean done
  
 # Clean must be a phony target so make knows this never exists as a file
 .PHONY: clean
