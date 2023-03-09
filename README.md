@@ -1,5 +1,6 @@
 # EASAutomationScript
 
+### Important: Ensure to change the embedded_path variable on line 21 to point to the embeddded folder for the Intel EDS on your system.
 ### Important: This script is to be run in a linux environment such as WSL or any linux shell.
 
 Simply put the automate.py file into the Quartus Directory and run it with "python3 automate.py", after you have done configuration in Platform designer.
